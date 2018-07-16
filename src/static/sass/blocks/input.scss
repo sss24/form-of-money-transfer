@@ -1,0 +1,76 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+    &--cvv {
+      font-size: 16px;
+    }
+  }
+
+  &__span {
+    margin: 0 3px 0 3px;
+  }
+
+  &__item {
+    border: none;
+    border-bottom: 1px solid $black;
+
+    &--short {
+      width: 50px;
+
+      text-align: center;
+    }
+
+    &--medium {
+      width: 55px;
+
+      text-align: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+  }
+
+  &--data &__item-checkbox {
+    margin: 0;
+  }
+
+  &--data &__item {
+    border: 1px solid $title;
+    background: transparent;
+
+    padding: 10px;
+  }
+
+  &--data &__title {
+    color: $title;
+
+    margin-bottom: 0;
+
+    position: relative;
+  }
+
+  &__button {
+    font-size: 16px;
+    color: #fff;
+
+    background: #4a914d;
+
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: #458248;
+    }
+  }
+}

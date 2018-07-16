@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+
+  margin: 0 auto;
+
+  &__title {
+    font-weight: 600;
+
+    color: $title;
+
+    position: absolute;
+    top: -30px;
+    left: -15px;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 360px;
+    height: 210px;
+
+    background: #fff;
+    box-sizing: border-box;
+
+    margin: 40px auto 0;
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #d1d1d1;
+
+    &:nth-child(2) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: $title;
+  }
+
+  &__content {
+    margin-top: 30px;
+  }
+
+  &__security {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+  }
+
+  &__cvv {
+    margin-right: 24px;
+  }
+
+  &__data {
+    position: relative;
+
+    width: 360px;
+
+    margin: 0 auto 40px;
+  }
+}
