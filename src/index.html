@@ -8,6 +8,64 @@
     <title>Form of money transfer</title>
 </head>
 <body>
-
+    <div class="wrapper">
+        <form class="form" action="" method="POST">
+            <div class="form__item">
+                <div class="form__title">Данные отправителя</div>
+                <div class="form__content">
+                    <div class="form__card-num input">
+                        <label class="input__title" for="card-num">Номер карты</label>
+                        <input class="input__item" id="card-num" type="text">
+                    </div>
+                    <div class="form__security">
+                        <div class="form__valid-dates input">
+                            <label class="input__title" for="valid-dates" >Срок действия</label>
+                            <input class="input__item input__item--short" id="valid-dates" type="text" placeholder="ММ">
+                            <input class="input__item input__item--short" id="" type="text" placeholder="ГГ">
+                        </div>
+                        <div class="form_cvv input">
+                            <label class="input__title input__title--cvv" for="cvv" >cvv/cvc</label>
+                            <input class="input__item input__item--medium" id="cvv" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="form__title">Данные отправителя</div>
+                <div class="form__content input">
+                    <div class="form__card-num input">
+                        <label class="input__title" for="card-num2">Номер карты</label>
+                        <input class="input__item" id="card-num2" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form__item form__item--data">
+                <div class="form__card-num input">
+                    <div class="input__wrapper">
+                        <div class="form__checkbox">
+                            <input class="input__item-checkbox" id="checkbox" type="checkbox" checked>
+                            <label class="input__title" for="checkbox" >Отправить чек на e-mail</label>
+                        </div>
+                        <input class="input__item" type="text" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="input__wrapper">
+                        <label class="input__title" for="transfer-amount" >Сумма перевода</label>
+                        <input class="input__item" id="transfer-amount" type="text" placeholder="От 500 до 500000">
+                    </div>
+                    <div class="input__wrapper">
+                        <label class="input__title" for="total-amount" >Итоговая сумма</label>
+                        <input class="input__item" id="total-amount" type="text" placeholder="От 680 до 530150">
+                    </div>
+                    <div class="input__wrapper">
+                        <div class="form__checkbox">
+                            <input class="input__item-checkbox" id="checkbox-msg" type="checkbox">
+                            <label class="input__title" for="checkbox-msg" >Добавить сообщение получателю</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Перевести">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
