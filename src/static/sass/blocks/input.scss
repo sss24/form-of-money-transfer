@@ -28,7 +28,7 @@
     }
 
     &--medium {
-      width: 55px;
+      width: 50px;
 
       text-align: center;
     }
@@ -39,6 +39,10 @@
     flex-direction: column;
 
     margin-bottom: 10px;
+
+    &--laptop {
+      display: none;
+    }
   }
 
   &--data &__item-checkbox {
@@ -47,7 +51,7 @@
 
   &--data &__item {
     border: 1px solid $title;
-    background: transparent;
+    background: #fff;
 
     padding: 10px;
   }
@@ -71,6 +75,21 @@
 
     &:hover {
       background: #458248;
+    }
+  }
+}
+
+@media (min-width: 825px) {
+  .input {
+
+    &__wrapper--mob {
+      display: none;
+    }
+
+    &__wrapper--laptop {
+      display: block;
+      order: 4;
+      margin: 0 20px;
     }
   }
 }

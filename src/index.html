@@ -12,6 +12,7 @@
     <div class="form__item">
         <div class="form__title">Данные отправителя</div>
         <div class="form__content">
+            <span class="form__brand"></span>
             <div class="input">
                 <label class="input__title" for="card-num">Номер карты</label>
                 <input class="input__item" id="card-num" type="text">
@@ -41,12 +42,18 @@
             </div>
         </div>
     </div>
+    <div class="input__wrapper input__wrapper--laptop">
+        <div class="form__checkbox">
+            <input class="input__item-checkbox" id="checkbox-msg-laptop" type="checkbox">
+            <label class="input__title" for="checkbox-msg-laptop">Добавить сообщение получателю</label>
+        </div>
+    </div>
     <div class="form__data">
         <div class="input input--data">
             <div class="form__checkbox input__wrapper">
                 <div>
-                    <input class="input__item-checkbox" id="checkbox" type="checkbox" checked>
-                    <label class="input__title" for="checkbox">Отправить чек на e-mail</label>
+                    <input class="input__item-checkbox" id="checkbox-email" type="checkbox" checked>
+                    <label class="input__title" for="checkbox-email">Отправить чек на e-mail</label>
                 </div>
                 <input class="input__item" type="text" placeholder="Ваш e-mail">
             </div>
@@ -59,7 +66,7 @@
                 <label class="input__title" for="total-amount">Итоговая сумма<span class="currency">BYN</span></label>
                 <input class="input__item" id="total-amount" type="text" placeholder="От 680 до 530150">
             </div>
-            <div class="input__wrapper">
+            <div class="input__wrapper input__wrapper--mob">
                 <div class="form__checkbox">
                     <input class="input__item-checkbox" id="checkbox-msg" type="checkbox">
                     <label class="input__title" for="checkbox-msg">Добавить сообщение получателю</label>

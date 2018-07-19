@@ -12,8 +12,21 @@
     color: $title;
 
     position: absolute;
-    top: -30px;
+    top: -35px;
     left: -15px;
+  }
+
+  &__brand {
+    display: block;
+
+    width: 50px;
+    height: 30px;
+
+    position: absolute;
+    top: 20px;
+    right: 35px;
+
+    border: 1px solid green;
   }
 
   &__item {
@@ -25,7 +38,7 @@
     background: #fff;
     box-sizing: border-box;
 
-    margin: 40px auto 0;
+    margin: 50px auto 0;
     padding: 30px;
 
     border-radius: 10px;
@@ -64,5 +77,21 @@
     width: 360px;
 
     margin: 0 auto 40px;
+  }
+}
+
+@media (min-width: 825px) {
+  .form {
+    min-width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__title {
+      left: 10px;
+    }
+
+    &__data {
+      margin: 0 20px;
+    }
   }
 }
