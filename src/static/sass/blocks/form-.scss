@@ -26,7 +26,15 @@
     top: 20px;
     right: 35px;
 
-    border: 1px solid green;
+    &--visa {
+      background: url("../images/visa.svg");
+    }
+    &--maestro {
+      background: url("../images/maestro.svg");
+    }
+    &--mastercard {
+      background: url("../images/mastercard.svg");
+    }
   }
 
   &__item {
